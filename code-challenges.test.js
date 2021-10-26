@@ -56,6 +56,12 @@ const peopleInfo = (array) => {
   })
 }
 
+// const dontPanic = (array) => {
+//   return array.map(object => {
+//     let properCase = object.name.split(" ").map(value => value[0]).toUpperCase() + value.slice(1).join(" ")
+//     return `${properCase}' is ${object.occupation}.`
+//   })
+// }
 
 
 // --------------------2) Create a function that takes in a mixed data array and returns an array of only the REMAINDERS of the numbers when divided by 3.
@@ -100,7 +106,18 @@ function remaindersArr(array){
   }return remaindersThree
 }
 
+// Additional solutions from Monday Reveiw
 
+// const remainsByTrey = (array) => {
+//   let numbsOnly = array.filter(value => {
+//     return typeof value === "number"
+//   })
+//   return numbsOnly.map(value => value % 3)
+// }
+
+// const remainsByTrey = (array) => {
+//     return array.filter(value => typeof value === "number").map(value => value % 3)
+//   }
 
 
 
@@ -138,3 +155,17 @@ function sumCubed(array){
   let newSumArray=array.map(value => Math.pow(value, 3))
  return  newSumArray.reduce((previousValue,currentValue) => previousValue + currentValue)
 }
+
+// Wanted to try to see if I could refactor and compress after seeing Monday review
+
+// function sumCubed(array){
+//   return newSumArray=array.map(value => Math.pow(value, 3)).reduce((previousValue,currentValue) => previousValue + currentValue)
+// }
+
+// Additional solution from Monday review
+
+// const iceCubed = (array) => {
+//   let anchor = 0
+//   array.map(value => anchor += value ** 3)
+//   return anchor
+// }

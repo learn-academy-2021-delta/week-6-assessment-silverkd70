@@ -31,9 +31,11 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 4. Consider the Rails routes below. What is the name of the controller method that would be called by each route? What action would each of the controller methods perform?
 
+<!-- Somehow I left the word index in some of my answers.  I removed them so things make more sense -->
+
 method="GET"    /students  
 
-The controller method called is index, show.
+The controller method called is index.
 
 Will display a list of all students.
 
@@ -45,19 +47,19 @@ Will create a new student
 
 method="GET"    /students/new
 
-The controller method called is index, new.
+The controller method called is new.
 
 Will return an HTML form for creating a new student.
 
 method="GET"    /students/2  
 
-The controller method called is index, show.
+The controller method called is show.
 
 Will display a specific student.
 
 method="GET"    /students/2/edit    
 
-The controller method called is index, edit.
+The controller method called is edit.
 
 Will return an HTML form for editing a student.
 
@@ -77,4 +79,22 @@ Will delete a specific student.
 
 5. As a developer, you are making an application to manage your to do list. Create 10 user stories that will help you get your application started. Read more about [user stories](https://www.atlassian.com/agile/project-management/user-stories).
 
-1.  As a developer I want to create a 'to-do' list application using Ruby on Rails, so that I can have a usable table and database to create a functaion and usable 'to-do' list to keep track of things I want to do and to mark off those items once they are completed.
+ 1.  As a developer I want to create a 'to-do' list application using Ruby on Rails, so that I can have a usable table and database to create a functaion and usable 'to-do' list to keep track of things I want to do and to mark off those items once they are completed.
+ 
+ 2.  As a developer, my 'to-do' list application will have a title and include content.
+ 
+ 3.  As a developer, I will need to add new 'to-do' items directly to my database.
+ 
+ 4.  As a developer, I will need to use migrate to add or make changes to my 'to-do' list items or to add new content, such as a completed and date column.
+ 
+ 5.  As a developer, I may want to consider using a foreign key in a new table for people resposible for specific 'to-do' list items.
+ 
+ 6.  As a user, I can see all of the 'to-do' list itmes listed on the home page of the application.
+ 
+ 7.  As a user, I can add new 'to-do' list items directly to the database.
+ 
+ 8.  As a user, I can see a new form that allows me to modify a 'to-do' list item.
+ 
+ 9.  As a user, I can be redirected back to the application home page after entering a new item.
+
+10.  As a user, I can can click on a 'to-do' list item and be routed to a page where I can see the title and content of the item I selected.
